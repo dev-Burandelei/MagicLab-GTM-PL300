@@ -1,0 +1,50 @@
+const products = [
+  {
+    id: "3d-001",
+    name: "Dragão de Mesa",
+    category: "3D",
+    description: "Miniatura decorativa impressa em 3D.",
+    price: 49.90,
+    icon: "🐉"
+  },
+  {
+    id: "3d-002",
+    name: "Suporte Gamer",
+    category: "3D",
+    description: "Suporte para controles e acessórios.",
+    price: 39.90,
+    icon: "🎮"
+  },
+  {
+    id: "tcg-001",
+    name: "Deck Box Arcano",
+    category: "TCG",
+    description: "Caixa para armazenar seu deck.",
+    price: 59.90,
+    icon: "🃏"
+  },
+  {
+    id: "tcg-002",
+    name: "Sleeves Pro",
+    category: "TCG",
+    description: "Protetores para cartas colecionáveis.",
+    price: 24.90,
+    icon: "✨"
+  },
+  {
+    id: "cro-001",
+    name: "Amigurumi Espacial",
+    category: "Crochê",
+    description: "Peça artesanal temática.",
+    price: 89.90,
+    icon: "🧶"
+  },
+  {
+    id: "cro-002",
+    name: "Kit Criativo",
+    category: "Crochê",
+    description: "Materiais para começar seu projeto.",
+    price: 69.90,
+    icon: "🪡"
+  }
+];

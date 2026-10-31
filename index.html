@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MagicLab: produtos de impressão 3D, TCG e crochê geek.">
+  <title>MagicLab | Seu universo geek</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-M86RKT7B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<body>
+
+  <header class="header">
+    <a class="logo" href="#">Magic<span>LAB</span></a>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+
+    <button id="cart-button" class="cart-button">
+      Carrinho (<span id="cart-count">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div>
+        <p class="eyebrow">SEU UNIVERSO. SUA COLEÇÃO.</p>
+        <h1>O extraordinário<br>mora nos detalhes.</h1>
+        <p>
+          Explore produtos criativos para quem vive a cultura geek,
+          coleciona histórias e gosta de criar.
+        </p>
+        <a href="#produtos" class="primary-button">Explorar produtos</a>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>Explore nossos universos</h2>
+      <div class="category-list">
+        <button data-category="3D">Impressão 3D</button>
+        <button data-category="TCG">TCG</button>
+        <button data-category="Crochê">Crochê Geek</button>
+        <button data-category="todos">Todos</button>
+      </div>
+    </section>
+
+    <section id="produtos" class="products-section">
+      <h2>Produtos em destaque</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section id="sobre" class="about">
+      <h2>Mais que uma loja. Um laboratório de criatividade.</h2>
+      <p>
+        A MagicLab reúne criatividade, cultura geek e produtos
+        para colecionar, construir e compartilhar.
+      </p>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+      <h2>Seu carrinho</h2>
+      <button id="close-cart" aria-label="Fechar carrinho">✕</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <p class="cart-total">
+      Total: <strong id="cart-total">R$ 0,00</strong>
+    </p>
+
+    <button id="checkout-button" class="primary-button full-width">
+      Finalizar pedido
+    </button>
+    <p class="demo-notice">Checkout demonstrativo — sem pagamento real.</p>
+  </aside>
+
+  <div id="overlay" class="overlay"></div>
+
+  <footer>
+    <p>© 2026 MagicLab. Projeto demonstrativo de e-commerce.</p>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
