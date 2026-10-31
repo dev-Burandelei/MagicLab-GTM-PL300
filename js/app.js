@@ -5,6 +5,12 @@ const cartItems = document.querySelector("#cart-items");
 const cartTotal = document.querySelector("#cart-total");
 const overlay = document.querySelector("#overlay");
 
+
+console.log("APP.JS CARREGADO");
+console.log("PRODUTOS:", products);
+console.log("ELEMENTO:", productList);
+console.log("ANALYTICS:", typeof trackEvent);
+
 let cart = [];
 
 const currency = value =>
@@ -12,6 +18,12 @@ const currency = value =>
     style: "currency",
     currency: "BRL"
   });
+
+console.log("Produtos:", products);
+console.log("Lista:", productList);
+console.log("Analytics:", typeof trackEvent);
+
+console.log("Quantidade de produtos:", products.length);
 
 function renderProducts(category = "todos") {
   const filtered = category === "todos"
